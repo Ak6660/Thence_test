@@ -1,5 +1,5 @@
 import React from 'react';
-import LogoImage from '../../public/images/Frame 1261155216.png';
+import LogoImage from '/public/images/Frame 1261155216.png';
 import Image from 'next/image';
 import Link from 'next/link';
 

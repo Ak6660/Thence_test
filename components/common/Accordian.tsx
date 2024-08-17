@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
-import openIcon from '../../public/images/Frame.png';
-import closeIcon from '../../public/images/closeframe.png';
+import openIcon from '/public/images/Frame.png';
+import closeIcon from '/public/images/closeframe.png';
 import React, {
   createContext,
   ReactNode,

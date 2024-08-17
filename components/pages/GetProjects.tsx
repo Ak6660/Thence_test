@@ -1,9 +1,16 @@
-import { coveredByYourGraceFont } from '@/app/layout';
 import Image from 'next/image';
 import Link from 'next/link';
 import closeIcon from '/public/images/Close.png';
 import Form from '../common/Form';
 import Logo from '../common/Logo';
+import { Covered_By_Your_Grace } from 'next/font/google';
+import { NextFont } from 'next/dist/compiled/@next/font';
+
+const coveredByYourGraceFont = Covered_By_Your_Grace({
+  subsets: ['latin'],
+  style: 'normal',
+  weight: '400',
+}) as NextFont;
 
 function GetProjects() {
   return (

@@ -1,7 +1,14 @@
-import { coveredByYourGraceFont } from '@/app/layout';
 import union from '../../public/images/Union (1).png';
 import Image from 'next/image';
 import Accordian, { Items } from './Accordian';
+import { NextFont } from 'next/dist/compiled/@next/font';
+import { Covered_By_Your_Grace } from 'next/font/google';
+
+const coveredByYourGraceFont = Covered_By_Your_Grace({
+  subsets: ['latin'],
+  style: 'normal',
+  weight: '400',
+}) as NextFont;
 
 const FaqSection = () => {
   return (

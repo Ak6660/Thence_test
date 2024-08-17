@@ -1,8 +1,15 @@
-import { coveredByYourGraceFont } from '@/app/layout';
 import Logo from '../common/Logo';
 import Timer from '../common/Timer';
 import CheckIcon from '/public/images/Tick + round.png';
 import Image from 'next/image';
+import { Covered_By_Your_Grace } from 'next/font/google';
+import { NextFont } from 'next/dist/compiled/@next/font';
+
+const coveredByYourGraceFont = Covered_By_Your_Grace({
+  subsets: ['latin'],
+  style: 'normal',
+  weight: '400',
+}) as NextFont;
 
 function ConfirmMailPage() {
   return (

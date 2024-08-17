@@ -1,4 +1,3 @@
-import { coveredByYourGraceFont } from '@/app/layout';
 import Image from 'next/image';
 import React from 'react';
 import HeroImage from '/public/images/image 32618.png';
@@ -7,6 +6,14 @@ import Button from './Button';
 import arrow from '/public/images/Vector.png';
 import rocketImage from '/public/images/Frame (1).png';
 import Card3D from './Card3D';
+import { Covered_By_Your_Grace } from 'next/font/google';
+import { NextFont } from 'next/dist/compiled/@next/font';
+
+const coveredByYourGraceFont = Covered_By_Your_Grace({
+  subsets: ['latin'],
+  style: 'normal',
+  weight: '400',
+}) as NextFont;
 
 function HeroSection() {
   return (
