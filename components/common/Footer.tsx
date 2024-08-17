@@ -1,5 +1,3 @@
-import React from 'react';
-
 function Footer() {
   return (
     <div className="bg-[#F5F5F5] w-[94vw] h-[10rem] rounded-[2rem] mx-auto overflow-clip flex justify-between px-16 items-center mb-10">

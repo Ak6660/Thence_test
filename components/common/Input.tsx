@@ -1,5 +1,3 @@
-import { InputHTMLAttributes } from 'react';
-
 interface InputProps {
   placeholder: string;
   name: string;

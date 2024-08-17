@@ -27,9 +27,9 @@ function Timer() {
     if (sec === 0) {
       router.push('/home');
     }
-  }, [sec]);
+  }, [sec, router]);
   return (
-    <p className=" flex-1 mt-56 text-2xl leading-9 tracking-wider  justify-items-end">
+    <p className=" flex-1 mt-44 text-2xl leading-9 tracking-wider  justify-items-end">
       Redirecting you to Homepage in{' '}
       <span className="font-semibold">{sec} Seconds</span>
     </p>
