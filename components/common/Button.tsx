@@ -19,8 +19,8 @@ function Button({
   disabled,
 }: ButtonProps) {
   const variant = {
-    primary: ` relative text-2xl p-8 bg-[#1C1C1C]  px-16 text-gray-50 border-gray-300 flex items-center justify-center border-[.1rem] my-3 rounded-full hover:bg-stone-700`,
-    secondary: `relative text-2xl p-8  px-16 text-black border-gray-300 flex items-center justify-center border-[.1rem] my-3 rounded-full hover:bg-gray-200`,
+    primary: ` relative text-2xl p-8 bg-[#1C1C1C]  px-16 text-gray-50 border-gray-300 flex items-center justify-center border-[.1rem] my-3 rounded-full hover:bg-stone-700 hover:shadow-lg`,
+    secondary: `relative text-2xl p-8  px-16 text-black border-gray-300 flex items-center justify-center border-[.1rem] my-3 rounded-full hover:bg-gray-200 hover:shadow-lg`,
   };
 
   const classname = variant[type as keyof Variant];
