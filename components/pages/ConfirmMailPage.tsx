@@ -1,6 +1,8 @@
 import { coveredByYourGraceFont } from '@/app/layout';
 import Logo from '../common/Logo';
 import Timer from '../common/Timer';
+import CheckIcon from '/public/images/Tick + round.png';
+import Image from 'next/image';
 
 function ConfirmMailPage() {
   return (
@@ -11,6 +13,14 @@ function ConfirmMailPage() {
         <Logo />
       </div>
       <div className="flex flex-col items-center ">
+        <div className="relative w-24 h-24 mb-10">
+          <Image
+            src={CheckIcon}
+            alt="check-design"
+            fill
+            className="object-cover"
+          />
+        </div>
         <p
           className={`${coveredByYourGraceFont.className} text-[3rem] text-green-500`}
         >

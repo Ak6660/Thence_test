@@ -16,10 +16,6 @@ export const coveredByYourGraceFont = Covered_By_Your_Grace(
 const manrope = Manrope({
   subsets: ['latin'],
 });
-export const metadata: Metadata = {
-  title: 'Brunel',
-  description: 'Every success journey we’ve encountered.',
-};
 
 export default function RootLayout({
   children,
@@ -34,3 +30,8 @@ export default function RootLayout({
     </html>
   );
 }
+
+export const metadata: Metadata = {
+  title: 'Brunel',
+  description: 'Every success journey we’ve encountered.',
+};
