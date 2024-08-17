@@ -5,7 +5,7 @@ import Accordian, { Items } from './Accordian';
 
 const FaqSection = () => {
   return (
-    <div className="h-screen flex justify-center items-center ">
+    <div className="h-screen flex justify-center items-center mt-80 ">
       <div className="bg-[#E8EEE7] w-[94vw] h-[95vh] rounded-[4rem] overflow-clip flex justify-center items-center">
         <div className="flex-1">
           <div className="flex flex-col pl-44">
