@@ -48,6 +48,11 @@ function Slider({ data }: SliderProps) {
                   src={content.mainImage}
                   alt="hero-slider-image"
                   fill
+                  className={`object-cover  ${
+                    content.mainImageClass
+                      ? content.mainImageClass
+                      : ''
+                  }`}
                 />
               </div>
               <Card3D>

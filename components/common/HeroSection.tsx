@@ -6,6 +6,7 @@ import HeroImage from '/public/images/image 32618.png';
 import crown from '/public/images/spark, sparkle, 26.png';
 import arrow from '/public/images/Vector.png';
 import Slider from './Slider';
+import heroGirl from '../../public/images/excited-beautiful-girl-smiling-pointing-fingers-upper-left-corner-looking-pleased-logo.jpg';
 
 const coveredByYourGraceFont = Covered_By_Your_Grace({
   subsets: ['latin'],
@@ -15,6 +16,7 @@ const coveredByYourGraceFont = Covered_By_Your_Grace({
 
 export interface Content {
   mainImage: StaticImageData;
+  mainImageClass?: string;
   card1Design?: StaticImageData;
   arrowIcon: StaticImageData;
   smallCardIcon: StaticImageData;
@@ -30,6 +32,7 @@ export interface Content {
 const contentArr: Content[] = [
   {
     mainImage: HeroImage,
+    mainImageClass: '',
     card1Design: crown,
     arrowIcon: arrow,
     smallCardIcon: rocketImage,
@@ -45,6 +48,7 @@ const contentArr: Content[] = [
   },
   {
     mainImage: HeroImage,
+    mainImageClass: 'scale-x-[-100%]',
     card1Design: crown,
     arrowIcon: arrow,
     smallCardIcon: rocketImage,
@@ -60,6 +64,7 @@ const contentArr: Content[] = [
   },
   {
     mainImage: HeroImage,
+    mainImageClass: '',
     card1Design: crown,
     arrowIcon: arrow,
     smallCardIcon: rocketImage,
