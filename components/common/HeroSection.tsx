@@ -1,12 +1,11 @@
 import { NextFont } from 'next/dist/compiled/@next/font';
 import { Covered_By_Your_Grace } from 'next/font/google';
 import { StaticImageData } from 'next/image';
+import Slider from './Slider';
 import rocketImage from '/public/images/Frame (1).png';
 import HeroImage from '/public/images/image 32618.png';
 import crown from '/public/images/spark, sparkle, 26.png';
 import arrow from '/public/images/Vector.png';
-import Slider from './Slider';
-import heroGirl from '../../public/images/excited-beautiful-girl-smiling-pointing-fingers-upper-left-corner-looking-pleased-logo.jpg';
 
 const coveredByYourGraceFont = Covered_By_Your_Grace({
   subsets: ['latin'],
@@ -34,17 +33,17 @@ const contentArr: Content[] = [
     mainImage: HeroImage,
     mainImageClass: '',
     card1Design: crown,
-    arrowIcon: arrow,
-    smallCardIcon: rocketImage,
     card1Heading: '40%',
     card1description:
       'Achieved reduction in project execution time by optimising team availability',
+    smallCardIcon: rocketImage,
     card2Heading: '10 Days',
     card2Description: 'Staff Deployment',
     card3Heading: '$0.5',
     card3Subheading: 'Million',
     card3Decription:
       'Reduced client expenses by saving on hiring and employee costs.',
+    arrowIcon: arrow,
   },
   {
     mainImage: HeroImage,
@@ -95,7 +94,6 @@ function HeroSection() {
 
       {/* Slider */}
       <Slider data={contentArr} />
-
       {/* Slider-end */}
     </div>
   );
