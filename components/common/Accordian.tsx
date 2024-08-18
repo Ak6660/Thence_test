@@ -4,7 +4,9 @@ import openIcon from '/public/images/Frame.png';
 import closeIcon from '/public/images/closeframe.png';
 import React, {
   createContext,
+  Dispatch,
   ReactNode,
+  SetStateAction,
   useContext,
   useState,
 } from 'react';
@@ -28,10 +30,16 @@ interface DescriptionProps {
   heading: string;
 }
 
-const AccordianContext = createContext({
-  open: '',
-  setOpen: (val: any) => {},
-});
+interface AccordianContextType {
+  open: string;
+  setOpen: Dispatch<SetStateAction<string>>;
+}
+
+const AccordianContext =
+  createContext<AccordianContextType>({
+    open: '',
+    setOpen: () => {},
+  });
 
 function Accordian({ children }: AccordianProps) {
   const [open, setOpen] = useState('');

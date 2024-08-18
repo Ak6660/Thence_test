@@ -1,7 +1,12 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import {
+  ChangeEvent,
+  FormEvent,
+  useEffect,
+  useState,
+} from 'react';
 import Button from './Button';
 import Input from './Input';
 
@@ -25,7 +30,7 @@ function Form() {
     }
   }, [formData]);
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     const errors = { name: '', email: '' };
     e.preventDefault();
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -42,7 +47,9 @@ function Form() {
     router.push('/confirm-mail');
   };
 
-  const handleChange = (e: any) => {
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement>
+  ) => {
     const { name, value } = e.target;
     setErrors((prevData) => ({ ...prevData, [name]: '' }));
 

@@ -60,7 +60,7 @@ function Card3D({ children }: Card3DProps) {
         rotateX,
         rotateY,
       }}
-      className="absolute top-0 left-0"
+      className="absolute top-0 left-0 "
     >
       {children}
     </motion.div>
