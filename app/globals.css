@@ -21,6 +21,18 @@
   .text-balance {
     text-wrap: balance;
   }
+
+  .reveal {
+    animation: navReveal 200ms ease-in-out;
+  }
+  @keyframes navReveal {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
 }
 
 ::-webkit-scrollbar {

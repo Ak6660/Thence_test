@@ -35,9 +35,15 @@ function Navbar() {
   return (
     <>
       <div
-        className={`w-[96vw] bg-white mx-auto h-40 text-black gap-8 border-gray-300 flex items-center justify-between p-6 border-[.1rem] my-5 transition-all rounded-full ${
+        style={{
+          position: `${sticky ? 'sticky' : 'static'}`,
+          top: '10px',
+          left: '0px',
+          transition: 'position 6000ms ease-in-out',
+        }}
+        className={`w-[96vw] bg-white mx-auto h-40 text-black gap-8 border-gray-300 flex items-center justify-between p-6 border-[.1rem] my-5 rounded-full ${
           sticky
-            ? 'sticky top-2 left-0 z-50 backdrop-blur-md bg-white/85'
+            ? 'reveal z-50 backdrop-blur-md bg-white/85'
             : ''
         }`}
       >
