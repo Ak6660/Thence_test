@@ -29,7 +29,7 @@ function HeroSection() {
       </div>
 
       {/* Slider */}
-      <div className="flex justify-between h-[100vh] text-3xl mt-16">
+      <div className="flex relative justify-between h-[100vh] text-3xl mt-16">
         <div className="flex-[2] relative  flex justify-center ">
           <div className="relative h-[50rem] w-[50rem] m-10 rounded-[5rem] overflow-clip">
             <Image
@@ -190,17 +190,7 @@ function HeroSection() {
             Enhance fortune 50 company&apos;s insights teams
             research capacities
           </p>
-          <div className="flex  w-full gap-5">
-            <div
-              className={`h-4 w-4 cursor-pointer ${
-                true
-                  ? 'bg-green-500 '
-                  : 'bg-gray-200 hover:bg-gray-300'
-              }  rounded-full `}
-            ></div>
-            <div className="h-4 w-4 cursor-pointer bg-gray-200 hover:bg-gray-300 rounded-full"></div>
-            <div className="h-4 w-4 cursor-pointer bg-gray-200 hover:bg-gray-300 rounded-full"></div>
-          </div>
+
           <div className="mt-36">
             <Button type="primary" classes="py-10 ">
               <div className="relative flex items-center gap-5 text-3xl">
@@ -211,6 +201,17 @@ function HeroSection() {
               </div>
             </Button>
           </div>
+        </div>
+        <div className="flex absolute left-[67%] top-[45%]  w-full gap-5">
+          <div
+            className={`h-4 w-4 cursor-pointer ${
+              true
+                ? 'bg-green-500 '
+                : 'bg-gray-200 hover:bg-gray-300'
+            }  rounded-full `}
+          ></div>
+          <div className="h-4 w-4 cursor-pointer bg-gray-200 hover:bg-gray-300 rounded-full"></div>
+          <div className="h-4 w-4 cursor-pointer bg-gray-200 hover:bg-gray-300 rounded-full"></div>
         </div>
       </div>
 
