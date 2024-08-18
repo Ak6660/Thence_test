@@ -17,7 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="!scroll-smooth">
-      <body className={`${manrope.className} bg-white`}>
+      <body
+        className={`${manrope.className} bg-white overflow-x-clip`}
+      >
         {children}
       </body>
     </html>
